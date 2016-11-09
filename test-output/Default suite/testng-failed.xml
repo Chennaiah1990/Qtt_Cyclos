@@ -7,7 +7,6 @@
         <methods>
           <include name="testDataValidation"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- testcases.Data_Validation_Test1 -->
     </classes>

@@ -17,7 +17,7 @@ public class Cyclos_HomePage
 	@FindBy(how=How.CSS, using="#menu15 > span.menuText")
 	WebElement logout_ele;
 	
-	@FindBy(how=How.XPATH, using="//input[@id='memberName']")
+	@FindBy(how=How.ID, using="memberName")
 	WebElement mem_prof_fname;
 	
 	public boolean isLogoutPresent()
