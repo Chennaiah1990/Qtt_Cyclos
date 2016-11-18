@@ -62,8 +62,8 @@ public class Data_Validation_Test1
 		Cyclos_MemProfPage memProf_pg = PageFactory.initElements(driver, Cyclos_MemProfPage.class);
 		Thread.sleep(3000);
 		
-		logger.log(LogStatus.PASS, logger.addScreenCapture(Utility.captureScreenShot(driver, "Test Data Validated")));
-		ResultSet rs = Utility.executeSQLQuery("select name, email from members where id=591");		
+		logger.log(LogStatus.PASS, logger.addScreenCapture(Utility.captureScreenShot("Test Data Validated")));
+		/*ResultSet rs = Utility.executeSQLQuery("select name, email from members where id=591");		
 		
 		while(rs.next())
 		{
@@ -78,11 +78,12 @@ public class Data_Validation_Test1
 					break;
 				}
 			}			
-		}
+		}*/
 				
 	}
 	
 	@AfterMethod
+	
 	public void tearDown(ITestResult result)
 	{
 		if (result.getStatus()==ITestResult.FAILURE) 

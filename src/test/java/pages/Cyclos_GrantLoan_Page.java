@@ -20,7 +20,7 @@ public class Cyclos_GrantLoan_Page
 	@FindBy(how=How.XPATH, using="//input[@id='amount']")
 	WebElement amount_field;
 	
-	@FindBy(how=How.XPATH, using="//input[@class='small InputBoxEnabled']")
+	@FindBy(how=How.CSS, using=".small.InputBoxEnabled")
 	WebElement identifier_field;
 
 	@FindBy(how=How.XPATH, using="//input[starts-with(@id,'_id14784')]")
@@ -61,11 +61,12 @@ public class Cyclos_GrantLoan_Page
 		{
 			calen_icon.click();
 			Thread.sleep(2000);
-			List<WebElement> alldates = driver.findElements(By.xpath("//body[@class='main']/div[5]//td"));
+			//List<WebElement> alldates = driver.findElements(By.xpath("//body[@class='main']/div[5]//td"));
+			List<WebElement> alldates = driver.findElements(By.xpath("html/body/div[3]"));
 			
 			for(WebElement dt : alldates)
 			{
-				if(dt.getText().contentEquals(date))
+				if(dt.getText().equalsIgnoreCase(date))
 				{
 					dt.click();
 					break;

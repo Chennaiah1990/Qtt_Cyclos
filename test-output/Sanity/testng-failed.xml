@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity]">
+  <test name="Sprint1(failed)">
+    <classes>
+      <class name="testcases.Data_Validation_Test1">
+        <methods>
+          <include name="testDataValidation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.Data_Validation_Test1 -->
+      <class name="testcases.LoanRepayCompare_Test3">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLoanAmountValidation"/>
+        </methods>
+      </class> <!-- testcases.LoanRepayCompare_Test3 -->
+      <class name="testcases.LoanAmountValidation_Test2">
+        <methods>
+          <include name="testLoanAmountValidation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.LoanAmountValidation_Test2 -->
+    </classes>
+  </test> <!-- Sprint1(failed) -->
+</suite> <!-- Failed suite [Sanity] -->

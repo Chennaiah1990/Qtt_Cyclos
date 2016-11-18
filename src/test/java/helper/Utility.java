@@ -12,6 +12,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.imageio.ImageIO;
 
@@ -63,13 +66,17 @@ public class Utility
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
-		String destination = "E:\\Selenium-Workspace\\WorkSpace\\automation_framework\\ScreeenShots\\"+screenShotName+System.currentTimeMillis()+".png";
+		Date dt = new Date();
+		
+		SimpleDateFormat ft = new SimpleDateFormat("ddMMyyyy hhmm");
+		
+		String destination = System.getProperty("user.dir")+"/ScreenShots/"+screenShotName+"_"+ft.format(dt)+".png";
 		
 		try 
 		{
 			FileUtils.copyFile(src, new File(destination));
 		} catch (Exception e) {
-			System.out.println("Failed to capture screen shot -"+e.getMessage());
+			System.out.println("Failed to capture screenshot -"+e.getMessage());
 		}
 		
 		return destination;
@@ -84,13 +91,17 @@ public class Utility
 		
 			image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
 			
-			destination = "E:\\Selenium-Workspace\\WorkSpace\\automation_framework\\ScreeenShots\\"+screenShotName+System.currentTimeMillis()+".png";
+			Date dt = new Date();
+			
+			SimpleDateFormat ft = new SimpleDateFormat("ddMMyyyy hhmm");
+
+			destination = System.getProperty("user.dir")+screenShotName+"_"+ft.format(dt)+".png";
 			
 			ImageIO.write(image, "png", new File(destination)); 
 		} 
 		 catch (Exception e) 
 		{
-			System.out.println("Exception while capturing screen shot "+e.getMessage());
+			System.out.println("Exception while capturing screenshot "+e.getMessage());
 		}	    	
 		
 		return destination;

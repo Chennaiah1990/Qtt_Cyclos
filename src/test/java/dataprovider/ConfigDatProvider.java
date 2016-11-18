@@ -13,7 +13,7 @@ public class ConfigDatProvider
 		try 
 		{
 			pro = new Properties();
-			pro.load(new FileInputStream(new File("E:\\Selenium-Workspace\\WorkSpace\\automation_framework\\Configuration\\config.properties")));
+			pro.load(new FileInputStream(new File("./Configuration/config.properties")));
 		} 
 		catch (Exception e) 
 		{
