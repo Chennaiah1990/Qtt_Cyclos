@@ -1,32 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18197" started-at="2016-11-18T07:24:55Z" finished-at="2016-11-18T07:25:13Z">
+  <suite name="Default suite" duration-ms="9533" started-at="2016-11-18T09:48:36Z" finished-at="2016-11-18T09:48:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18197" started-at="2016-11-18T07:24:55Z" finished-at="2016-11-18T07:25:13Z">
-      <class name="testcases.Data_Validation_Test1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.Data_Validation_Test1@7dc7cbad]" name="setUp" is-config="true" duration-ms="8793" started-at="2016-11-18T12:54:55Z" finished-at="2016-11-18T12:55:04Z">
+    <test name="Default test" duration-ms="9533" started-at="2016-11-18T09:48:36Z" finished-at="2016-11-18T09:48:46Z">
+      <class name="testcases.VerifyHomePage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.VerifyHomePage@7dc7cbad]" name="setUp" is-config="true" duration-ms="7840" started-at="2016-11-18T15:18:36Z" finished-at="2016-11-18T15:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDataValidation()[pri:0, instance:testcases.Data_Validation_Test1@7dc7cbad]" name="testDataValidation" duration-ms="7385" started-at="2016-11-18T12:55:04Z" finished-at="2016-11-18T12:55:11Z">
+        <test-method status="FAIL" signature="testHomePage()[pri:0, instance:testcases.VerifyHomePage@7dc7cbad]" name="testHomePage" duration-ms="40" started-at="2016-11-18T15:18:44Z" finished-at="2016-11-18T15:18:44Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at testcases.VerifyHomePage.testHomePage(VerifyHomePage.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataValidation -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.Data_Validation_Test1@7dc7cbad]" name="tearDown" is-config="true" duration-ms="1998" started-at="2016-11-18T12:55:11Z" finished-at="2016-11-18T12:55:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testDataValidation status=SUCCESS method=Data_Validation_Test1.testDataValidation()[pri:0, instance:testcases.Data_Validation_Test1@7dc7cbad] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.VerifyHomePage@7dc7cbad]" name="tearDown" is-config="true" duration-ms="1619" started-at="2016-11-18T15:18:44Z" finished-at="2016-11-18T15:18:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.Data_Validation_Test1 -->
+      </class> <!-- testcases.VerifyHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

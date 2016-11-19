@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.Data_Validation_Test1">
+      <class name="testcases.VerifyHomePage">
         <methods>
-          <include name="testDataValidation"/>
-          <include name="setUp"/>
+          <include name="testHomePage"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.Data_Validation_Test1 -->
+      </class> <!-- testcases.VerifyHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
